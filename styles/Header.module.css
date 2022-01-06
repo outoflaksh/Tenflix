@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  min-height: 15vh;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4.6rem;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(100deg, #e24b4b 30.38%, #e24b94 88.45%, #b82c2c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subheading {
+  max-width: 60%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: -25px 0 0;
+}
+
+.title,
+.subheading {
+  text-align: center;
+}
