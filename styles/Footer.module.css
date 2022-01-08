@@ -1,0 +1,13 @@
+.footer {
+  background: rgb(29, 29, 29);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6em;
+  min-height: 10vh;
+}
+
+.footer a {
+  text-decoration: underline;
+}

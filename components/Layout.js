@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
     return (
@@ -13,10 +14,7 @@ const Layout = ({ children }) => {
                 />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet" />
             </Head>
             <Header />
             <div className={styles.container}>
@@ -24,6 +22,7 @@ const Layout = ({ children }) => {
                     {children}
                 </main>
             </div>
+            <Footer />
         </>
     )
 }
