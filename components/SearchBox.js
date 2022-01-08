@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { QueryContext } from "./QueryContext"
+import styles from '../styles/Search.module.css'
 
 const SearchBox = () => {
     const [query, setQuery] = useContext(QueryContext)
@@ -15,9 +16,9 @@ const SearchBox = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleOnSubmit}>
-                <input name="searchBox" type="search" />
+        <div className={styles.container}>
+            <form onSubmit={handleOnSubmit} className={styles.searchForm}>
+                <input name="searchBox" type="search" defaultValue="You" />
                 <button type="submit">Suggest titles</button>
             </form>
         </div>
