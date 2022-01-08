@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import SearchBox from '../components/SearchBox'
 import CardList from '../components/CardList'
-import styles from '../styles/Home.module.css'
+import { QueryProvider } from '../components/QueryContext'
 
 
 export default function Home() {
@@ -11,8 +11,10 @@ export default function Home() {
       <Head>
         <title>Tenflix</title>
       </Head>
-      <SearchBox />
-      <CardList />
+      <QueryProvider>
+        <SearchBox />
+        <CardList />
+      </QueryProvider>
     </>
   )
 }
