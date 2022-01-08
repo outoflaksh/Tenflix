@@ -1,13 +1,13 @@
 import styles from '../styles/Card.module.css'
 
-const CardItem = ({ props, id }) => {
+const CardItem = ({ title, id }) => {
     return (
         <div className={styles.card}>
             <div className={styles.heading}>
-                {id}. {props.title} <span>- {props.duration}</span>
+                {id}. {title.title} <span>- {title.duration}</span>
             </div>
             <div className={styles.description}>
-                {props.description}
+                {title.description}
             </div>
         </div>
     )
