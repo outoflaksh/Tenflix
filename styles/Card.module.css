@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 50vh;
 }
 
 .card {
@@ -43,4 +44,13 @@
 
 .description {
   padding: 18px 20px 30px 20px;
+}
+
+.notFound {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background: rgba(199, 48, 48, 0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
 }
