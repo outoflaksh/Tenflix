@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -44,4 +43,28 @@
 .searchForm button:hover {
   background-color: #d85f5f;
   box-shadow: 0px 2px 20px rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .searchForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchForm input,
+  .searchForm button {
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  .searchForm input {
+    width: 100%;
+  }
+
+  .searchForm button {
+    width: 60%;
+  }
 }

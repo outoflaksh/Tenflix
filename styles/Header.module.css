@@ -26,3 +26,10 @@
 .subheading {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .subheading {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}
