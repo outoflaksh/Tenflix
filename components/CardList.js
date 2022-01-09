@@ -9,17 +9,22 @@ const CardList = () => {
     const [titleFound, setTitleFound] = useState(true)
 
     const getTitles = async (query) => {
-        const responsePromise = await fetch(`http://localhost:5000/recommend?title=${query}`)
-        
-        if (responsePromise.status !== 200) {
-            setTitles([])
-            setTitleFound(false)
-            return
+        try {
+            const responsePromise = await fetch(`http://localhost:5000/recommend?title=${query}`)
+            
+            if (responsePromise.status !== 200) {
+                setTitles([])
+                setTitleFound(false)
+                return
+            }
+            setTitleFound(true)
+            const dataPromise = await responsePromise.json()
+            const data = await dataPromise.data
+            setTitles(data)
         }
-        setTitleFound(true)
-        const dataPromise = await responsePromise.json()
-        const data = await dataPromise.data
-        setTitles(data)
+        catch {
+            setTitleFound(false)
+        }
     }
     
     useEffect(() => {
