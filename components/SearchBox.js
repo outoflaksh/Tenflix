@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { QueryContext } from "./QueryContext"
 import styles from '../styles/Search.module.css'
 
-const SearchBox = () => {
+export default function SearchBox() {
     const [query, setQuery] = useContext(QueryContext)
 
     const handleOnSubmit = (e) => {
@@ -18,11 +18,9 @@ const SearchBox = () => {
     return (
         <div className={styles.container}>
             <form onSubmit={handleOnSubmit} className={styles.searchForm}>
-                <input name="searchBox" type="search" defaultValue="You" />
+                <input name="searchBox" type="search" defaultValue="You"/>
                 <button type="submit">Suggest titles</button>
             </form>
         </div>
     )
 }
-
-export default SearchBox

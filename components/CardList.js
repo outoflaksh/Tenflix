@@ -14,8 +14,7 @@ const CardList = () => {
 
     const getTitles = async (query) => {
         try {
-            const responsePromise = await fetch(`http://localhost:5000/recommend?title=${query}`)
-            
+            const responsePromise = await fetch(`http://localhost:8000/recommend?title=${query}`)
             if (responsePromise.status === 404) {
                 setTitles([])
                 setTitleFound(false)
@@ -25,6 +24,7 @@ const CardList = () => {
             setTitleFound(true)
             const dataPromise = await responsePromise.json()
             const data = await dataPromise.data
+            console.log(data);
             setTitles(data)
         }
         catch {
