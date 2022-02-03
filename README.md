@@ -51,8 +51,6 @@ This repository contains the files for the frontend part of Tenflix and the reco
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
 * [FastAPI](https://fastapi.tiangolo.com/)
@@ -91,7 +89,7 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [IG: @outoflaksh](https://instagram.com/outoflakshoutoflaksh/Tenflix)
+Lakshya Malik - [IG: @outoflaksh](https://instagram.com/outoflakshoutoflaksh/Tenflix)
 
 Project Link: [https://github.com/outoflaksh/Tenflix](https://github.com/outoflaksh/Tenflix)
 
