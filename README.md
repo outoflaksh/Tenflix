@@ -38,7 +38,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]()
 
 <b> 
 Tenflix is content-recommendation engine that displays the top 10 most similar titles based on the plot, cast, genre, and directors of your favorite Netflix title. The recommendations were calculated on a dataset containing details of over 7000 different titles.
